@@ -1,0 +1,751 @@
+---
+title: "Spatial Data Science"
+subtitle: "a very short introduction"
+author: "Firman Hadi"
+institute: "Teknik Geodesi, Universitas Diponegoro"
+date: "27-May-2025"
+format: 
+  revealjs:
+    theme: simple
+    transition: slide
+    background-transition: fade
+    highlight-style: github
+    code-fold: true
+    width: 1400
+    height: 1000
+    margin: 0.1
+    min-scale: 0.2
+    max-scale: 2.0
+    center: true
+    hash: true
+    history: false
+    slide-number: true
+    show-slide-number: all
+    footer: "🌐 www.sigro.id | 🐦 @jalmiburung"
+    css: |
+      .reveal {
+        font-family: 'Courier New', monospace !important;
+      }
+      .reveal .slides section {
+        text-align: left;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .reveal .slides section .comic-panel {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .comic-panel {
+          background: white;
+          border: 3px solid black;
+          margin: 10px auto;
+          padding: 20px;
+          font-family: 'Courier New', monospace;
+          border-radius: 10px;
+          box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+          max-height: 90vh;
+          overflow: auto;
+      }
+      .stick-figure {
+          font-size: 20px;
+          text-align: center;
+          margin: 15px 0;
+          font-family: monospace;
+          line-height: 1.2;
+          font-weight: bold;
+      }
+      .speech-bubble {
+          border: 3px solid black;
+          border-radius: 20px;
+          padding: 15px;
+          margin: 15px auto;
+          background: #f9f9f9;
+          max-width: 600px;
+          position: relative;
+          font-family: 'Courier New', monospace;
+          font-size: 16px;
+      }
+      .speech-bubble::before {
+          content: '';
+          position: absolute;
+          bottom: -15px;
+          left: 40px;
+          width: 0;
+          height: 0;
+          border: 15px solid transparent;
+          border-top-color: black;
+      }
+      .speech-bubble::after {
+          content: '';
+          position: absolute;
+          bottom: -12px;
+          left: 43px;
+          width: 0;
+          height: 0;
+          border: 12px solid transparent;
+          border-top-color: #f9f9f9;
+      }
+      .definition-box {
+          border: 4px solid black;
+          padding: 15px;
+          margin: 15px 0;
+          background: #f0f0f0;
+          font-family: 'Courier New', monospace;
+          font-size: 14px;
+      }
+      .venn-container {
+          text-align: center;
+          margin: 20px 0;
+          font-size: 16px;
+      }
+      .problem-grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 10px;
+          margin: 20px 0;
+      }
+      .problem-item {
+          border: 3px solid black;
+          padding: 12px;
+          text-align: center;
+          font-family: 'Courier New', monospace;
+          background: #f8f8f8;
+          font-size: 14px;
+      }
+      .pillars-container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 15px;
+          margin: 20px 0;
+      }
+      .pillar-box {
+          border: 4px solid black;
+          padding: 20px;
+          text-align: center;
+          font-family: 'Courier New', monospace;
+          background: #f5f5f5;
+          font-size: 14px;
+      }
+      .center-text {
+          text-align: center;
+      }
+      .comparison-container {
+          display: flex;
+          justify-content: space-around;
+          margin: 20px 0;
+          flex-wrap: wrap;
+      }
+      .comparison-item {
+          text-align: center;
+          padding: 15px;
+          border: 3px solid black;
+          margin: 10px;
+          background: #f9f9f9;
+          font-family: 'Courier New', monospace;
+          flex: 1;
+          min-width: 250px;
+          font-size: 14px;
+      }
+      .reveal h1, .reveal h2, .reveal h3 {
+          font-family: 'Courier New', monospace !important;
+          text-transform: none !important;
+          font-weight: bold !important;
+      }
+      .reveal .progress {
+          color: #000 !important;
+      }
+      .big-ascii {
+          font-size: 16px;
+          line-height: 1.1;
+          font-weight: bold;
+      }
+      .worry-list {
+          font-size: 16px;
+          background: #fff;
+          border: 3px solid black;
+          padding: 20px;
+          margin: 15px auto;
+          max-width: 500px;
+      }
+      .summary-table {
+          font-size: 12px;
+          border-collapse: collapse;
+          margin: 15px auto;
+          width: 100%;
+          max-width: 800px;
+      }
+      .summary-table th, .summary-table td {
+          border: 2px solid black;
+          padding: 8px;
+          text-align: left;
+      }
+      .footer-note {
+          text-align: center;
+          font-style: italic;
+          font-size: 14px;
+          margin-top: 20px;
+      }
+      .reveal .slide-number {
+          font-family: 'Courier New', monospace !important;
+          font-size: 16px !important;
+          font-weight: bold !important;
+          background-color: black !important;
+          color: white !important;
+          padding: 5px 10px !important;
+          border-radius: 5px !important;
+          bottom: 15px !important;
+          right: 15px !important;
+      }
+      .reveal .slide-number a {
+          color: white !important;
+      }
+      .reveal .reveal-viewport .footer {
+          font-family: 'Courier New', monospace !important;
+          font-size: 14px !important;
+          background-color: rgba(0,0,0,0.8) !important;
+          color: white !important;
+          padding: 8px 15px !important;
+          border-radius: 5px 5px 0 0 !important;
+          bottom: 0 !important;
+          left: 0 !important;
+          right: 0 !important;
+          text-align: center !important;
+      }
+      .contact-info {
+          background: #f0f0f0;
+          border: 4px solid black;
+          padding: 25px;
+          margin: 20px auto;
+          text-align: center;
+          font-family: 'Courier New', monospace;
+          max-width: 600px;
+          border-radius: 10px;
+      }
+      .contact-info h3 {
+          margin-top: 0;
+          font-size: 24px;
+      }
+      .contact-links {
+          font-size: 18px;
+          margin: 15px 0;
+      }
+      .contact-links a {
+          color: #000;
+          text-decoration: none;
+          font-weight: bold;
+      }
+      .contact-links a:hover {
+          text-decoration: underline;
+      }
+execute:
+  echo: false
+  warning: false
+---
+
+## Laboratorium Departemen Teknik Geodesi - UNDIP {.comic-panel}
+
+::: center-text
+![](geodesi.png){fig-align="center" style="max-width: 80%; max-height: 60vh; width: auto; height: auto; object-fit: contain;"}
+:::
+
+::: speech-bubble
+Spatial Data Science laboratorium is a research laboratory, established to accommodate multi-disciplinary research.
+:::
+
+------------------------------------------------------------------------
+
+## What is Science? {.comic-panel}
+
+::: stick-figure
+```         
+    o
+   /|\
+   / \
+```
+:::
+
+::: speech-bubble
+Science is basically building testable explanations about the universe!
+
+Also, it's about finding general truths through experiments.
+
+You know, avoiding that pesky correlation vs causation thing.
+:::
+
+------------------------------------------------------------------------
+
+## Science: The Official Definition {.comic-panel}
+
+::: definition-box
+**Science (Wikipedia):** A systematic enterprise that builds and organizes knowledge in the form of testable explanations and predictions about the universe
+
+**Science (Webster):** Knowledge covering general truths of the operation of general laws, especially as obtained and tested through scientific method
+:::
+
+**Key Point:** Experimentation is crucial to establish **causal relationships** (avoiding the correlation fallacy)
+
+------------------------------------------------------------------------
+
+## Data Science: The Ultimate Mashup {.comic-panel}
+
+::: definition-box
+**Data Science:** An interdisciplinary field about processes and systems to extract knowledge or insights from data in various forms
+
+*Historical note: Computer Science = Data Science (Naur, 1960); Statistics = Data Science (Wu, 1997)*
+:::
+
+::: speech-bubble
+We focus on **correlation** rather than causality.
+
+Because causality is hard, and we have deadlines.
+:::
+
+------------------------------------------------------------------------
+
+## Data Science is Multi-disciplinary {.comic-panel}
+
+::: {.center-text .big-ascii}
+```         
+  o     o     o     o     o     o     o
+ /|\   /|\   /|\   /|\   /|\   /|\   /|\
+ / \   / \   / \   / \   / \   / \   / \
+
+ DB   Big   Stats  ML   Mining  Viz  Domain
+      Data
+```
+:::
+
+The seven core areas that make data scientists cry:
+
+1.  **Database** 2. **Big Data Systems** 3. **Statistics** 4. **Machine Learning**
+2.  **Data Mining** 6. **Data Visualization** 7. **Application Domain Knowledge**
+
+------------------------------------------------------------------------
+
+## Spatial Data Science: Geography Strikes Back! {.comic-panel}
+
+::: {.venn-container .big-ascii}
+```         
+    Spatial Science  +  Data Science
+           |                |
+           v                v
+    ┌─────────────────────────────┐
+    │   Spatial Data Science!     │
+    │                             │
+    │  • GIS                      │
+    │  • Spatial DBMS             │ 
+    │  • Spatial Big Data         │
+    │  • Spatial Analytics        │
+    │  • MAUP                     │
+    │  • Topology                 │
+    │  • Map Projections          │
+    │  • Spatial Autocorrelation  │
+    └─────────────────────────────┘
+```
+:::
+
+------------------------------------------------------------------------
+
+## The Key Difference {.comic-panel}
+
+::: definition-box
+**Spatial Data Science:** An interdisciplinary field that extracts knowledge AND causal relationships of spatial phenomena from spatial and other data in various forms
+
+**Revolutionary insight:** Focus equally on correlation AND causality!
+:::
+
+------------------------------------------------------------------------
+
+## Data Scientist vs Spatial Data Scientist {.comic-panel}
+
+::::: comparison-container
+::: comparison-item
+```         
+    o
+   /|\
+   / \
+```
+
+**Data Scientist**
+
+"These variables correlate!"
+:::
+
+::: comparison-item
+```         
+    o
+   /|\
+   / \
+```
+
+**Spatial Data Scientist**
+
+"These variables correlate AND I know exactly WHERE!"
+:::
+:::::
+
+------------------------------------------------------------------------
+
+## The Spatial Anxiety List {.comic-panel}
+
+::: {.worry-list .center-text}
+**What Keeps Spatial Data Scientists Awake:**
+
+• GIS Integration Issues\
+• Spatial Database Management\
+• Spatial Big Data Processing\
+• MAUP (Modifiable Areal Unit Problem)\
+• Topology Nightmares\
+• Uncertainty Quantification\
+• Map Projection Disasters\
+• Coordinate System Conflicts\
+• Spatial Autocorrelation Mysteries
+:::
+
+::: stick-figure
+```         
+    o
+   /|\ *nervous sweating*
+   / \
+```
+:::
+
+------------------------------------------------------------------------
+
+## Real-World SDS Problems {.comic-panel}
+
+::::::: problem-grid
+::: problem-item
+🚗 **Urban Traffic** Where are the bottlenecks?
+:::
+
+::: problem-item
+🏥 **Healthcare** Disease outbreak mapping
+:::
+
+::: problem-item
+🗳️ **Politics** Electoral pattern analysis
+:::
+
+::: problem-item
+📊 **Business Intelligence** Market optimization
+:::
+:::::::
+
+::::::: problem-grid
+::: problem-item
+🏙️ **City Operations** Resource allocation
+:::
+
+::: problem-item
+💧 **Hydrology** Water flow modeling
+:::
+
+::: problem-item
+🌋 **Disaster Planning** Risk assessment
+:::
+
+::: problem-item
+🚨 **Emergency Services** Response optimization
+:::
+:::::::
+
+------------------------------------------------------------------------
+
+## Real-World SDS Example: Peat Distribution {.comic-panel}
+
+::: center-text
+![Workflow](gambut1.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+:::
+
+------------------------------------------------------------------------
+
+## Real-World SDS Example: Peat Distribution {.comic-panel}
+
+::: center-text
+![Method](gambut2.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+:::
+
+------------------------------------------------------------------------
+
+## Real-World SDS Example: Peat Distribution {.comic-panel}
+
+::: center-text
+![Method](gambut3.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+:::
+
+------------------------------------------------------------------------
+
+## Real-World SDS Example: Peat Distribution {.comic-panel}
+
+::: center-text
+![Method](gambut4.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+:::
+
+------------------------------------------------------------------------
+
+## Real-World SDS Example: Peat Distribution {.comic-panel}
+
+::: center-text
+![Importance variable selection](gambut5.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+:::
+
+------------------------------------------------------------------------
+
+## Real-World SDS Example: Peat Distribution {.comic-panel}
+
+::: center-text
+![Importance variables](gambut6.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+:::
+
+------------------------------------------------------------------------
+
+## Real-World SDS Example: Peat Distribution {.comic-panel}
+
+::: center-text
+![Result: Peatland in Sumatera](gambut7.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+:::
+
+------------------------------------------------------------------------
+
+## Real-World SDS Example: Peat Distribution {.comic-panel}
+
+::: center-text
+![Result: Peatland in Kalimantan](gambut8.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+:::
+
+::: speech-bubble
+Here's spatial data science in action! Random Forest vs Maximum Entropy models predicting peat distribution in Kalimantan, Indonesia.
+
+Notice how we're not just finding patterns - we're mapping them with precision AND testing different prediction methods!
+:::
+
+------------------------------------------------------------------------
+
+## Real-World SDS Example: Peat Distribution {.comic-panel}
+
+::: center-text
+![Result: Peatland in Sulawesi](gambut9.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+:::
+
+------------------------------------------------------------------------
+
+## Real-World SDS Example: Peat Distribution {.comic-panel}
+
+::: center-text
+![Result: Peatland in Papua](gambut10.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+:::
+
+------------------------------------------------------------------------
+
+## Real-World SDS Example: Peat Distribution {.comic-panel}
+
+::: center-text
+![Result: Comparison with Existing Data](gambut11.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+:::
+
+------------------------------------------------------------------------
+
+## Real-World SDS Example: Peat Distribution {.comic-panel}
+
+::: center-text
+![Result: Field Validation](gambut12.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+:::
+
+------------------------------------------------------------------------
+
+## Real-World SDS Example: Integrated Digital Monitoring for Agriculture {.comic-panel}
+
+::: center-text
+![Business Process](pangan1.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+:::
+
+------------------------------------------------------------------------
+
+## Real-World SDS Example: Integrated Digital Monitoring for Agriculture {.comic-panel}
+
+::: center-text
+![https://pangan.bappenas.go.id](pangan2.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+:::
+
+------------------------------------------------------------------------
+
+## Thesis: DESAIN WEBGIS PREFERENSI PEMILIH PEMULA PADA PEMILU 2024 (Maria Natasha, 2024) {.comic-panel}
+
+::: center-text
+![https://n5a8nj-maria0natasha-maharani0putri.shinyapps.io/WebGIS-Mapilu-23/](skripsi1.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+:::
+
+------------------------------------------------------------------------
+
+## Thesis: DASHBOARD WEBGIS DEMOGRAFI KOTA SEMARANG MENGGUNAKAN MAPBOX GL JS (Yakub Hariana, 2024) {.comic-panel}
+
+::: center-text
+![https://spatialcitizen-client.vercel.app/](skripsi2.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+:::
+
+------------------------------------------------------------------------
+
+## Thesis: PEMODELAN SPASIAL-TEMPORAL DEMAM BERDARAH DENGUE (DBD) DI KABUPATEN JEPARA BERBASIS SISTEM INFORMASI GEOGRAFIS (Sekar Arum Kusuma Dewi, 2024) {.comic-panel}
+
+::: center-text
+![Peta Resiko Relatif DBD di Bulan Basah dan Kering](skripsi5.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+:::
+
+------------------------------------------------------------------------
+
+## Thesis: PEMETAAN KERAWANAN KEBAKARAN LAHAN GAMBUT BERBASIS MACHINE LEARNING (Nindia Priscilla, 2024) {.comic-panel}
+
+::: center-text
+![](skripsi6.png){fig-align="center" style="max-width: 100%; max-height: 90vh; width: auto; height: auto; object-fit: contain;"}
+:::
+
+------------------------------------------------------------------------
+
+## Thesis: RANCANG BANGUN WEBMAP KEMACETAN LALU LINTAS MENGGUNAKAN DATA AREA TRAFFIC CONTROL SYSTEM (Intan Nurul Fallah and Fayruz Zahira Taqiyya, 2025) {.comic-panel}
+
+::: center-text
+![https://realtimevehicle-c14f0.web.app/](skripsi3.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+:::
+
+------------------------------------------------------------------------
+
+##  {.comic-panel}
+
+::: center-text
+![https://traffic-vision.replit.app/](skripsi4.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+:::
+
+------------------------------------------------------------------------
+
+## The Four Pillars of Spatial Data Science {.comic-panel}
+
+::::::: pillars-container
+::: pillar-box
+**1. GIS** (Geographic Information System)
+
+The old reliable friend
+:::
+
+::: pillar-box
+**2. Spatial DBMS** (Spatial Database Management)
+
+Where spatial data lives
+:::
+
+::: pillar-box
+**3. Spatial Data Analytics**
+
+The fancy math that scares people
+:::
+
+::: pillar-box
+**4. Big Data Systems**
+
+For ALL the maps of ALL the things
+:::
+:::::::
+
+------------------------------------------------------------------------
+
+## Plus: Domain Knowledge {.comic-panel}
+
+::::: center-text
+::: definition-box
+**Application Domain Knowledge**
+
+Because knowing WHERE something happens is useless if you don't know WHAT it means
+:::
+
+::: stick-figure
+```         
+    o
+   /|\  <- This person knows stuff
+   / \
+```
+:::
+:::::
+
+------------------------------------------------------------------------
+
+## The Bottom Line {.comic-panel}
+
+::: speech-bubble
+**Data Science:** "I found patterns in your data!"
+
+**Spatial Data Science:** "I found patterns in your data, AND I can show you exactly where they are on a map, AND I can tell you why location matters, AND I can predict what will happen in other places!"
+
+*Also, I have nightmares about coordinate systems.*
+:::
+
+------------------------------------------------------------------------
+
+## Summary Comparison {.comic-panel}
+
+| **Aspect**        | **Data Science** | **Spatial Data Science**      |
+|-------------------|------------------|-------------------------------|
+| **Focus**         | Correlation      | Correlation + Causality       |
+| **Data**          | Any format       | Spatial + Other formats       |
+| **Questions**     | What patterns?   | Where + Why patterns?         |
+| **Complexity**    | High             | Higher (+ spatial)            |
+| **Sleep Quality** | Poor             | Worse (coordinate nightmares) |
+
+------------------------------------------------------------------------
+
+## Thank You! {.comic-panel}
+
+::: stick-figure
+```         
+    o
+   /|\  <- This person knows spatial data science!
+   / \
+```
+:::
+
+::: speech-bubble
+Questions about spatial data science? Want to collaborate on mapping projects?
+
+Drop me a line! I promise I won't bore you with coordinate system details... much.
+:::
+
+:::
+
+:::
+
+:::
+
+:::: contact-info
+### Get in Touch!
+
+::: contact-links
+🌐 **Website:** [www.sigro.id](https://www.sigro.id)
+
+🐦 **Twitter:** [\@jalmiburung](https://twitter.com/jalmiburung)
+
+📧 **Email:** firmanhadi21\@lecturer.undip.ac.id
+
+🏛️ **Institution:** Teknik Geodesi, Universitas Diponegoro
+:::
+::::
+
+------------------------------------------------------------------------
+
+## Resources & Final Thoughts {.comic-panel}
+
+**For Data Science:** Any of the 47,000 available textbooks
+
+**For Spatial Data Science:** Pray and check your coordinate systems
+
+**For Sanity:** Consider quantum physics instead
+
+::: footer-note
+*No actual spatial autocorrelation was harmed in making this presentation*
+
+*Warning: Spatial Data Science may cause existential crises about the nature of space and time*
+
+*Side effects may include: map projection obsession, compulsive "but where?" questioning, and 3 AM coordinate system panic attacks*
+:::
