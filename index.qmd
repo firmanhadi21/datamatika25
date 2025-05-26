@@ -459,7 +459,7 @@ The seven core areas that make data scientists cry:
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
 ::: center-text
-![Workflow](gambut1.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+![Workflow](img/gambut1.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ------------------------------------------------------------------------
@@ -467,7 +467,7 @@ The seven core areas that make data scientists cry:
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
 ::: center-text
-![Method](gambut2.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+![Method](img/gambut2.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ------------------------------------------------------------------------
@@ -475,7 +475,7 @@ The seven core areas that make data scientists cry:
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
 ::: center-text
-![Method](gambut3.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+![Method](img/gambut3.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ------------------------------------------------------------------------
@@ -483,7 +483,7 @@ The seven core areas that make data scientists cry:
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
 ::: center-text
-![Method](gambut4.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+![Method](img/gambut4.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ------------------------------------------------------------------------
@@ -491,7 +491,7 @@ The seven core areas that make data scientists cry:
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
 ::: center-text
-![Importance variable selection](gambut5.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+![Importance variable selection](img/gambut5.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ------------------------------------------------------------------------
@@ -499,7 +499,7 @@ The seven core areas that make data scientists cry:
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
 ::: center-text
-![Importance variables](gambut6.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+![Importance variables](img/gambut6.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ------------------------------------------------------------------------
@@ -507,7 +507,7 @@ The seven core areas that make data scientists cry:
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
 ::: center-text
-![Result: Peatland in Sumatera](gambut7.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+![Result: Peatland in Sumatera](img/gambut7.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ------------------------------------------------------------------------
@@ -515,7 +515,7 @@ The seven core areas that make data scientists cry:
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
 ::: center-text
-![Result: Peatland in Kalimantan](gambut8.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+![Result: Peatland in Kalimantan](img/gambut8.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ::: speech-bubble
@@ -529,7 +529,7 @@ Notice how we're not just finding patterns - we're mapping them with precision A
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
 ::: center-text
-![Result: Peatland in Sulawesi](gambut9.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+![Result: Peatland in Sulawesi](img/gambut9.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ------------------------------------------------------------------------
@@ -537,7 +537,7 @@ Notice how we're not just finding patterns - we're mapping them with precision A
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
 ::: center-text
-![Result: Peatland in Papua](gambut10.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+![Result: Peatland in Papua](img/gambut10.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ------------------------------------------------------------------------
@@ -545,7 +545,7 @@ Notice how we're not just finding patterns - we're mapping them with precision A
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
 ::: center-text
-![Result: Comparison with Existing Data](gambut11.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+![Result: Comparison with Existing Data](img/gambut11.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ------------------------------------------------------------------------
@@ -553,7 +553,7 @@ Notice how we're not just finding patterns - we're mapping them with precision A
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
 ::: center-text
-![Result: Field Validation](gambut12.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+![Result: Field Validation](img/gambut12.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ------------------------------------------------------------------------
@@ -561,7 +561,7 @@ Notice how we're not just finding patterns - we're mapping them with precision A
 ## Real-World SDS Example: Integrated Digital Monitoring for Agriculture {.comic-panel}
 
 ::: center-text
-![Business Process](pangan1.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+![Business Process](img/pangan1.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ------------------------------------------------------------------------
@@ -569,7 +569,7 @@ Notice how we're not just finding patterns - we're mapping them with precision A
 ## Real-World SDS Example: Integrated Digital Monitoring for Agriculture {.comic-panel}
 
 ::: center-text
-![https://pangan.bappenas.go.id](pangan2.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+![https://pangan.bappenas.go.id](img/pangan2.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ------------------------------------------------------------------------
@@ -577,7 +577,7 @@ Notice how we're not just finding patterns - we're mapping them with precision A
 ## Thesis: DESAIN WEBGIS PREFERENSI PEMILIH PEMULA PADA PEMILU 2024 (Maria Natasha, 2024) {.comic-panel}
 
 ::: center-text
-![https://n5a8nj-maria0natasha-maharani0putri.shinyapps.io/WebGIS-Mapilu-23/](skripsi1.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+![https://n5a8nj-maria0natasha-maharani0putri.shinyapps.io/WebGIS-Mapilu-23/](img/skripsi1.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ------------------------------------------------------------------------
@@ -585,7 +585,7 @@ Notice how we're not just finding patterns - we're mapping them with precision A
 ## Thesis: DASHBOARD WEBGIS DEMOGRAFI KOTA SEMARANG MENGGUNAKAN MAPBOX GL JS (Yakub Hariana, 2024) {.comic-panel}
 
 ::: center-text
-![https://spatialcitizen-client.vercel.app/](skripsi2.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+![https://spatialcitizen-client.vercel.app/](img/skripsi2.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ------------------------------------------------------------------------
@@ -593,7 +593,7 @@ Notice how we're not just finding patterns - we're mapping them with precision A
 ## Thesis: PEMODELAN SPASIAL-TEMPORAL DEMAM BERDARAH DENGUE (DBD) DI KABUPATEN JEPARA BERBASIS SISTEM INFORMASI GEOGRAFIS (Sekar Arum Kusuma Dewi, 2024) {.comic-panel}
 
 ::: center-text
-![Peta Resiko Relatif DBD di Bulan Basah dan Kering](skripsi5.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+![Peta Resiko Relatif DBD di Bulan Basah dan Kering](img/skripsi5.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ------------------------------------------------------------------------
@@ -601,7 +601,7 @@ Notice how we're not just finding patterns - we're mapping them with precision A
 ## Thesis: PEMETAAN KERAWANAN KEBAKARAN LAHAN GAMBUT BERBASIS MACHINE LEARNING (Nindia Priscilla, 2024) {.comic-panel}
 
 ::: center-text
-![](skripsi6.png){fig-align="center" style="max-width: 100%; max-height: 90vh; width: auto; height: auto; object-fit: contain;"}
+![](img/skripsi6.png){fig-align="center" style="max-width: 100%; max-height: 90vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ------------------------------------------------------------------------
@@ -609,7 +609,7 @@ Notice how we're not just finding patterns - we're mapping them with precision A
 ## Thesis: RANCANG BANGUN WEBMAP KEMACETAN LALU LINTAS MENGGUNAKAN DATA AREA TRAFFIC CONTROL SYSTEM (Intan Nurul Fallah and Fayruz Zahira Taqiyya, 2025) {.comic-panel}
 
 ::: center-text
-![https://realtimevehicle-c14f0.web.app/](skripsi3.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+![https://realtimevehicle-c14f0.web.app/](img/skripsi3.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ------------------------------------------------------------------------
@@ -617,7 +617,7 @@ Notice how we're not just finding patterns - we're mapping them with precision A
 ##  {.comic-panel}
 
 ::: center-text
-![https://traffic-vision.replit.app/](skripsi4.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+![https://traffic-vision.replit.app/](img/skripsi4.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ------------------------------------------------------------------------
