@@ -248,27 +248,27 @@ execute:
 
 ## Laboratorium Departemen Teknik Geodesi - UNDIP {.comic-panel}
 
-::: center-text
+::: {.center-text}
 ![](geodesi.png){fig-align="center" style="max-width: 80%; max-height: 60vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
-::: speech-bubble
-Spatial Data Science laboratorium is a research laboratory, established to accommodate multi-disciplinary research.
+::: {.speech-bubble}
+Spatial Data Science laboratorium is a research laboratory, established to accommodate multi-disciplinary research. 
 :::
 
-------------------------------------------------------------------------
+---
 
 ## What is Science? {.comic-panel}
 
-::: stick-figure
-```         
+::: {.stick-figure}
+```
     o
    /|\
    / \
 ```
 :::
 
-::: speech-bubble
+::: {.speech-bubble}
 Science is basically building testable explanations about the universe!
 
 Also, it's about finding general truths through experiments.
@@ -276,11 +276,11 @@ Also, it's about finding general truths through experiments.
 You know, avoiding that pesky correlation vs causation thing.
 :::
 
-------------------------------------------------------------------------
+---
 
 ## Science: The Official Definition {.comic-panel}
 
-::: definition-box
+::: {.definition-box}
 **Science (Wikipedia):** A systematic enterprise that builds and organizes knowledge in the form of testable explanations and predictions about the universe
 
 **Science (Webster):** Knowledge covering general truths of the operation of general laws, especially as obtained and tested through scientific method
@@ -288,393 +288,381 @@ You know, avoiding that pesky correlation vs causation thing.
 
 **Key Point:** Experimentation is crucial to establish **causal relationships** (avoiding the correlation fallacy)
 
-------------------------------------------------------------------------
+---
 
 ## Data Science: The Ultimate Mashup {.comic-panel}
 
-::: definition-box
+::: {.definition-box}
 **Data Science:** An interdisciplinary field about processes and systems to extract knowledge or insights from data in various forms
 
 *Historical note: Computer Science = Data Science (Naur, 1960); Statistics = Data Science (Wu, 1997)*
 :::
 
-::: speech-bubble
+::: {.speech-bubble}
 We focus on **correlation** rather than causality.
 
 Because causality is hard, and we have deadlines.
 :::
 
-------------------------------------------------------------------------
+---
 
-## Data Science is Multi-disciplinary {.comic-panel}
+## Data Science is Multidisciplinary {.comic-panel}
 
-::: {.center-text .big-ascii}
-```         
-  o     o     o     o     o     o     o
- /|\   /|\   /|\   /|\   /|\   /|\   /|\
- / \   / \   / \   / \   / \   / \   / \
-
- DB   Big   Stats  ML   Mining  Viz  Domain
-      Data
-```
+::: {.center-text}
+![Workflow](img/data.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
-
-The seven core areas that make data scientists cry:
-
-1.  **Database** 2. **Big Data Systems** 3. **Statistics** 4. **Machine Learning**
-2.  **Data Mining** 6. **Data Visualization** 7. **Application Domain Knowledge**
-
-------------------------------------------------------------------------
+---
 
 ## Spatial Data Science: Geography Strikes Back! {.comic-panel}
 
-::: {.venn-container .big-ascii}
-```         
-    Spatial Science  +  Data Science
-           |                |
-           v                v
-    ┌─────────────────────────────┐
-    │   Spatial Data Science!     │
-    │                             │
-    │  • GIS                      │
-    │  • Spatial DBMS             │ 
-    │  • Spatial Big Data         │
-    │  • Spatial Analytics        │
-    │  • MAUP                     │
-    │  • Topology                 │
-    │  • Map Projections          │
-    │  • Spatial Autocorrelation  │
-    └─────────────────────────────┘
-```
+::: {.center-text}
+![Workflow](img/sds.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
-------------------------------------------------------------------------
+---
 
 ## The Key Difference {.comic-panel}
 
-::: definition-box
+::: {.definition-box}
 **Spatial Data Science:** An interdisciplinary field that extracts knowledge AND causal relationships of spatial phenomena from spatial and other data in various forms
 
 **Revolutionary insight:** Focus equally on correlation AND causality!
 :::
 
-------------------------------------------------------------------------
+---
 
 ## Data Scientist vs Spatial Data Scientist {.comic-panel}
 
-::::: comparison-container
-::: comparison-item
-```         
+::: {.comparison-container}
+::: {.comparison-item}
+```
     o
    /|\
    / \
 ```
-
 **Data Scientist**
 
 "These variables correlate!"
 :::
 
-::: comparison-item
-```         
+::: {.comparison-item}
+```
     o
    /|\
    / \
 ```
-
 **Spatial Data Scientist**
 
 "These variables correlate AND I know exactly WHERE!"
 :::
-:::::
+:::
 
-------------------------------------------------------------------------
+---
 
 ## The Spatial Anxiety List {.comic-panel}
 
 ::: {.worry-list .center-text}
 **What Keeps Spatial Data Scientists Awake:**
 
-• GIS Integration Issues\
-• Spatial Database Management\
-• Spatial Big Data Processing\
-• MAUP (Modifiable Areal Unit Problem)\
-• Topology Nightmares\
-• Uncertainty Quantification\
-• Map Projection Disasters\
-• Coordinate System Conflicts\
-• Spatial Autocorrelation Mysteries
+• GIS Integration Issues  
+• Spatial Database Management  
+• Spatial Big Data Processing  
+• MAUP (Modifiable Areal Unit Problem)  
+• Topology Nightmares  
+• Uncertainty Quantification  
+• Map Projection Disasters  
+• Coordinate System Conflicts  
+• Spatial Autocorrelation Mysteries  
 :::
 
-::: stick-figure
-```         
+::: {.stick-figure}
+```
     o
    /|\ *nervous sweating*
    / \
 ```
 :::
 
-------------------------------------------------------------------------
+---
 
 ## Real-World SDS Problems {.comic-panel}
 
-::::::: problem-grid
-::: problem-item
-🚗 **Urban Traffic** Where are the bottlenecks?
+::: {.problem-grid}
+::: {.problem-item}
+🚗 **Urban Traffic**
+Where are the bottlenecks?
 :::
 
-::: problem-item
-🏥 **Healthcare** Disease outbreak mapping
+::: {.problem-item}
+🏥 **Healthcare**
+Disease outbreak mapping
 :::
 
-::: problem-item
-🗳️ **Politics** Electoral pattern analysis
+::: {.problem-item}
+🗳️ **Politics**
+Electoral pattern analysis
 :::
 
-::: problem-item
-📊 **Business Intelligence** Market optimization
+::: {.problem-item}
+📊 **Business Intelligence**
+Market optimization
 :::
-:::::::
-
-::::::: problem-grid
-::: problem-item
-🏙️ **City Operations** Resource allocation
 :::
 
-::: problem-item
-💧 **Hydrology** Water flow modeling
+::: {.problem-grid}
+::: {.problem-item}
+🏙️ **City Operations**
+Resource allocation
 :::
 
-::: problem-item
-🌋 **Disaster Planning** Risk assessment
+::: {.problem-item}
+💧 **Hydrology**
+Water flow modeling
 :::
 
-::: problem-item
-🚨 **Emergency Services** Response optimization
+::: {.problem-item}
+🌋 **Disaster Planning**
+Risk assessment
 :::
-:::::::
 
-------------------------------------------------------------------------
+::: {.problem-item}
+🚨 **Emergency Services**
+Response optimization
+:::
+:::
+
+---
 
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
-::: center-text
+::: {.center-text}
 ![Workflow](img/gambut1.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
-------------------------------------------------------------------------
+---
 
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
-::: center-text
+::: {.center-text}
 ![Method](img/gambut2.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
-------------------------------------------------------------------------
+---
 
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
-::: center-text
+::: {.center-text}
 ![Method](img/gambut3.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
-------------------------------------------------------------------------
+---
 
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
-::: center-text
+::: {.center-text}
 ![Method](img/gambut4.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
-------------------------------------------------------------------------
+---
 
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
-::: center-text
+::: {.center-text}
 ![Importance variable selection](img/gambut5.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
-------------------------------------------------------------------------
+---
 
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
-::: center-text
+::: {.center-text}
 ![Importance variables](img/gambut6.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
-------------------------------------------------------------------------
+---
 
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
-::: center-text
+::: {.center-text}
 ![Result: Peatland in Sumatera](img/gambut7.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
-------------------------------------------------------------------------
+---
 
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
-::: center-text
+::: {.center-text}
 ![Result: Peatland in Kalimantan](img/gambut8.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
-::: speech-bubble
-Here's spatial data science in action! Random Forest vs Maximum Entropy models predicting peat distribution in Kalimantan, Indonesia.
+::: {.speech-bubble}
+Here's spatial data science in action! Random Forest vs Maximum Entropy models predicting peat distribution in Kalimantan, Indonesia. 
 
 Notice how we're not just finding patterns - we're mapping them with precision AND testing different prediction methods!
 :::
 
-------------------------------------------------------------------------
+---
 
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
-::: center-text
+::: {.center-text}
 ![Result: Peatland in Sulawesi](img/gambut9.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
-------------------------------------------------------------------------
+---
 
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
-::: center-text
+::: {.center-text}
 ![Result: Peatland in Papua](img/gambut10.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
-------------------------------------------------------------------------
+---
 
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
-::: center-text
+::: {.center-text}
 ![Result: Comparison with Existing Data](img/gambut11.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
-------------------------------------------------------------------------
+---
 
 ## Real-World SDS Example: Peat Distribution {.comic-panel}
 
-::: center-text
+::: {.center-text}
 ![Result: Field Validation](img/gambut12.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
-------------------------------------------------------------------------
+---
 
 ## Real-World SDS Example: Integrated Digital Monitoring for Agriculture {.comic-panel}
 
-::: center-text
+::: {.center-text}
 ![Business Process](img/pangan1.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
-------------------------------------------------------------------------
+---
 
 ## Real-World SDS Example: Integrated Digital Monitoring for Agriculture {.comic-panel}
 
-::: center-text
+::: {.center-text}
 ![https://pangan.bappenas.go.id](img/pangan2.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
-------------------------------------------------------------------------
+---
 
-## Thesis: DESAIN WEBGIS PREFERENSI PEMILIH PEMULA PADA PEMILU 2024 (Maria Natasha, 2024) {.comic-panel}
 
-::: center-text
+
+## Thesis: DESAIN WEBGIS PREFERENSI PEMILIH PEMULA PADA PEMILU 2024 (Maria Natasha, 2024)  {.comic-panel}
+
+::: {.center-text}
 ![https://n5a8nj-maria0natasha-maharani0putri.shinyapps.io/WebGIS-Mapilu-23/](img/skripsi1.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
-------------------------------------------------------------------------
+---
 
-## Thesis: DASHBOARD WEBGIS DEMOGRAFI KOTA SEMARANG MENGGUNAKAN MAPBOX GL JS (Yakub Hariana, 2024) {.comic-panel}
 
-::: center-text
+## Thesis: DASHBOARD WEBGIS DEMOGRAFI KOTA SEMARANG MENGGUNAKAN MAPBOX GL JS (Yakub Hariana, 2024)  {.comic-panel}
+
+::: {.center-text}
 ![https://spatialcitizen-client.vercel.app/](img/skripsi2.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
-------------------------------------------------------------------------
+---
 
-## Thesis: PEMODELAN SPASIAL-TEMPORAL DEMAM BERDARAH DENGUE (DBD) DI KABUPATEN JEPARA BERBASIS SISTEM INFORMASI GEOGRAFIS (Sekar Arum Kusuma Dewi, 2024) {.comic-panel}
 
-::: center-text
+
+
+## Thesis: PEMODELAN SPASIAL-TEMPORAL DEMAM BERDARAH DENGUE (DBD) DI KABUPATEN JEPARA BERBASIS SISTEM INFORMASI GEOGRAFIS  (Sekar Arum Kusuma Dewi, 2024)  {.comic-panel}
+
+::: {.center-text}
 ![Peta Resiko Relatif DBD di Bulan Basah dan Kering](img/skripsi5.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
-------------------------------------------------------------------------
+---
 
-## Thesis: PEMETAAN KERAWANAN KEBAKARAN LAHAN GAMBUT BERBASIS MACHINE LEARNING (Nindia Priscilla, 2024) {.comic-panel}
 
-::: center-text
+
+## Thesis: PEMETAAN KERAWANAN KEBAKARAN LAHAN GAMBUT BERBASIS MACHINE LEARNING (Nindia Priscilla, 2024)  {.comic-panel}
+
+::: {.center-text}
 ![](img/skripsi6.png){fig-align="center" style="max-width: 100%; max-height: 90vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
-------------------------------------------------------------------------
+---
 
-## Thesis: RANCANG BANGUN WEBMAP KEMACETAN LALU LINTAS MENGGUNAKAN DATA AREA TRAFFIC CONTROL SYSTEM (Intan Nurul Fallah and Fayruz Zahira Taqiyya, 2025) {.comic-panel}
 
-::: center-text
+## Thesis: RANCANG BANGUN WEBMAP KEMACETAN LALU LINTAS MENGGUNAKAN DATA AREA TRAFFIC CONTROL SYSTEM (Intan Nurul Fallah and Fayruz Zahira Taqiyya, 2025)  {.comic-panel}
+
+::: {.center-text}
 ![https://realtimevehicle-c14f0.web.app/](img/skripsi3.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
-------------------------------------------------------------------------
+---
 
-##  {.comic-panel}
+##   {.comic-panel}
 
-::: center-text
+::: {.center-text}
 ![https://traffic-vision.replit.app/](img/skripsi4.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
-------------------------------------------------------------------------
+---
 
 ## The Four Pillars of Spatial Data Science {.comic-panel}
 
-::::::: pillars-container
-::: pillar-box
-**1. GIS** (Geographic Information System)
+::: {.pillars-container}
+::: {.pillar-box}
+**1. GIS**
+(Geographic Information System)
 
 The old reliable friend
 :::
 
-::: pillar-box
-**2. Spatial DBMS** (Spatial Database Management)
+::: {.pillar-box}
+**2. Spatial DBMS**
+(Spatial Database Management)
 
 Where spatial data lives
 :::
 
-::: pillar-box
+::: {.pillar-box}
 **3. Spatial Data Analytics**
 
 The fancy math that scares people
 :::
 
-::: pillar-box
+::: {.pillar-box}
 **4. Big Data Systems**
 
 For ALL the maps of ALL the things
 :::
-:::::::
+:::
 
-------------------------------------------------------------------------
+---
 
 ## Plus: Domain Knowledge {.comic-panel}
 
-::::: center-text
-::: definition-box
+::: {.center-text}
+::: {.definition-box}
 **Application Domain Knowledge**
 
 Because knowing WHERE something happens is useless if you don't know WHAT it means
 :::
 
-::: stick-figure
-```         
+::: {.stick-figure}
+```
     o
    /|\  <- This person knows stuff
    / \
 ```
 :::
-:::::
+:::
 
-------------------------------------------------------------------------
+---
 
 ## The Bottom Line {.comic-panel}
 
-::: speech-bubble
+::: {.speech-bubble}
 **Data Science:** "I found patterns in your data!"
 
 **Spatial Data Science:** "I found patterns in your data, AND I can show you exactly where they are on a map, AND I can tell you why location matters, AND I can predict what will happen in other places!"
@@ -682,32 +670,32 @@ Because knowing WHERE something happens is useless if you don't know WHAT it mea
 *Also, I have nightmares about coordinate systems.*
 :::
 
-------------------------------------------------------------------------
+---
 
 ## Summary Comparison {.comic-panel}
 
-| **Aspect**        | **Data Science** | **Spatial Data Science**      |
-|-------------------|------------------|-------------------------------|
-| **Focus**         | Correlation      | Correlation + Causality       |
-| **Data**          | Any format       | Spatial + Other formats       |
-| **Questions**     | What patterns?   | Where + Why patterns?         |
-| **Complexity**    | High             | Higher (+ spatial)            |
-| **Sleep Quality** | Poor             | Worse (coordinate nightmares) |
+| **Aspect** | **Data Science** | **Spatial Data Science** |
+|------------|------------------|---------------------------|
+| **Focus** | Correlation | Correlation + Causality |
+| **Data** | Any format | Spatial + Other formats |
+| **Questions** | What patterns? | Where + Why patterns? |
+| **Complexity** | High | Higher (+ spatial) |
+| **Sleep Quality** | Poor | Worse (coordinate nightmares) |
 
-------------------------------------------------------------------------
+
+---
 
 ## Thank You! {.comic-panel}
 
-::: stick-figure
-```         
+::: {.stick-figure}
+```
     o
    /|\  <- This person knows spatial data science!
    / \
 ```
 :::
-
-::: speech-bubble
-Questions about spatial data science? Want to collaborate on mapping projects?
+::: {.speech-bubble}
+Questions about spatial data science? Want to collaborate on mapping projects? 
 
 Drop me a line! I promise I won't bore you with coordinate system details... much.
 :::
@@ -718,21 +706,23 @@ Drop me a line! I promise I won't bore you with coordinate system details... muc
 
 :::
 
-:::: contact-info
+::: {.contact-info}
+
+
 ### Get in Touch!
 
-::: contact-links
+::: {.contact-links}
 🌐 **Website:** [www.sigro.id](https://www.sigro.id)
 
-🐦 **Twitter:** [\@jalmiburung](https://twitter.com/jalmiburung)
+🐦 **Twitter:** [@jalmiburung](https://twitter.com/jalmiburung)
 
-📧 **Email:** firmanhadi21\@lecturer.undip.ac.id
+📧 **Email:** firmanhadi21@lecturer.undip.ac.id
 
 🏛️ **Institution:** Teknik Geodesi, Universitas Diponegoro
 :::
-::::
+:::
 
-------------------------------------------------------------------------
+---
 
 ## Resources & Final Thoughts {.comic-panel}
 
@@ -742,7 +732,7 @@ Drop me a line! I promise I won't bore you with coordinate system details... muc
 
 **For Sanity:** Consider quantum physics instead
 
-::: footer-note
+::: {.footer-note}
 *No actual spatial autocorrelation was harmed in making this presentation*
 
 *Warning: Spatial Data Science may cause existential crises about the nature of space and time*
