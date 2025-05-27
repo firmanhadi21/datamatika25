@@ -316,7 +316,7 @@ Because causality is hard, and we have deadlines.
 ## Spatial Data Science: Geography Strikes Back! {.comic-panel}
 
 ::: {.center-text}
-![Workflow](img/sds.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+![Workflow](img/sds.png){fig-align="center" style="max-width: 90%; max-height: 50vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ---
@@ -725,6 +725,8 @@ Drop me a line! I promise I won't bore you with coordinate system details... muc
 ---
 
 ## Resources & Final Thoughts {.comic-panel}
+
+**For Real:** Spatial Data Science and Applications by Yonsei University [https://www.coursera.org/learn/spatial-data-science/home/info](https://www.coursera.org/learn/spatial-data-science/home/info)
 
 **For Data Science:** Any of the 47,000 available textbooks
 
