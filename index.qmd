@@ -249,7 +249,7 @@ execute:
 ## Laboratorium Departemen Teknik Geodesi - UNDIP {.comic-panel}
 
 ::: {.center-text}
-![](geodesi.png){fig-align="center" style="max-width: 80%; max-height: 60vh; width: auto; height: auto; object-fit: contain;"}
+![](img/geodesi.png){fig-align="center" style="max-width: 80%; max-height: 60vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ::: {.speech-bubble}
@@ -595,7 +595,7 @@ Notice how we're not just finding patterns - we're mapping them with precision A
 ## Thesis: RANCANG BANGUN WEBMAP KEMACETAN LALU LINTAS MENGGUNAKAN DATA AREA TRAFFIC CONTROL SYSTEM (Intan Nurul Fallah and Fayruz Zahira Taqiyya, 2025)  {.comic-panel}
 
 ::: {.center-text}
-![https://realtimevehicle-c14f0.web.app/](img/skripsi3.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
+![https://realtimevehicle-c14f0.web.app/](img/skripsi3.png){fig-align="center" style="max-width: 100%; max-height: 50vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
 ---
