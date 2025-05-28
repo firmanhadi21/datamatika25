@@ -556,6 +556,8 @@ Notice how we're not just finding patterns - we're mapping them with precision A
 ## Thesis: DESAIN WEBGIS PREFERENSI PEMILIH PEMULA PADA PEMILU 2024 (Maria Natasha, 2024)  {.comic-panel}
 
 ::: {.center-text}
+[WebGIS Mapilu 2023](https://n5a8nj-maria0natasha-maharani0putri.shinyapps.io/WebGIS-Mapilu-23)
+
 ![https://n5a8nj-maria0natasha-maharani0putri.shinyapps.io/WebGIS-Mapilu-23/](img/skripsi1.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
@@ -565,6 +567,8 @@ Notice how we're not just finding patterns - we're mapping them with precision A
 ## Thesis: DASHBOARD WEBGIS DEMOGRAFI KOTA SEMARANG MENGGUNAKAN MAPBOX GL JS (Yakub Hariana, 2024)  {.comic-panel}
 
 ::: {.center-text}
+[Spatial Citizen Semarang](https://spatialcitizen-client.vercel.app/)
+
 ![https://spatialcitizen-client.vercel.app/](img/skripsi2.png){fig-align="center" style="max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain;"}
 :::
 
@@ -592,12 +596,13 @@ Notice how we're not just finding patterns - we're mapping them with precision A
 ---
 
 
-## Thesis: RANCANG BANGUN WEBMAP KEMACETAN LALU LINTAS MENGGUNAKAN DATA AREA TRAFFIC CONTROL SYSTEM (Intan Nurul Fallah and Fayruz Zahira Taqiyya, 2025)  {.comic-panel}
+## Thesis: RANCANG BANGUN WEBMAP KEMACETAN LALU LINTAS MENGGUNAKAN DATA AREA TRAFFIC CONTROL SYSTEM (Falah and Taqiyya, 2025)  {.comic-panel}
 
 ::: {.center-text}
-![https://realtimevehicle-c14f0.web.app/](img/skripsi3.png){fig-align="center" style="max-width: 100%; max-height: 50vh; width: auto; height: auto; object-fit: contain;"}
-:::
+[Real-time Vehicle Traffic Monitoring System](https://realtimevehicle-c14f0.web.app)
 
+![https://realtimevehicle-c14f0.web.app/](img/skripsi3.png){fig-align="center" style="max-width: 90%; max-height: 50vh; width: auto; height: auto; object-fit: contain;"}
+:::
 ---
 
 ##   {.comic-panel}
